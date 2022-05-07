@@ -145,8 +145,139 @@ const islphoneUser = phone === 'iPhone';*/
 
 //2 (arba 9).uzduotis (Loop)
 
-for(let i = 0; i <10; i++) {
+/*for(let i = 0; i <10; i++) {
   console.log("Julija" + " " + i)
-} 
+} */
 
-//3 (arba 10). uzduotis 
+
+
+/*for(let i = 0; i < 10; i++) {
+  console.log(`${i + 1}.Julija`);
+} */
+
+
+
+/*const vardas = "Julija";
+const count = 10; 
+
+for(let i = 0; i < count; i++) {
+  console.log(`${i + 1}.${vardas}`);
+} */
+
+
+/*let i = 10;
+while (i > 0) {
+  console.log(i);
+  i--
+}*/
+
+/*for (let i = 10; i > 0; i--) {
+console.log (i);
+}*/
+
+//  i=10, 10 > 0; 10
+//  i=9, 9 > 0; 9
+//  ...
+//  i=0, 0> 0; 0
+
+/*for (let i = 0; i < 10; i += 2){
+  console.log (i);
+}*/
+
+
+// i= 0; 0 , 10; 0 = 0 + 2
+// i= 2, 2 < 10; 2= 2 + 2 
+// i = 4; 4< 10; 6 = 4 + 2
+
+
+/*for (let i = 0; i < 10; i += 3){
+  console.log (i);
+} */
+
+
+/*const dogName = "Rikis";
+const repeat = 5;
+let result = "";
+
+for (let i = 0; i < repeat; i++) {
+  result += dogName;
+}
+console.log(result);
+
+i = 0; 1 < 5; 0 = 0 + 1  */
+
+/*"" = "" + "Rikis"
+"Rikis" = "Rikis" + "Rikis"
+"RikisRikis" = "RikisRikis" + "Rikis"
+"RikisRikisRikis" = "RikisRikisRikis" + "Rikis"
+"RikisRikisRikisRikis" = "RikisRikisRikisRikis" + "Rikis"*/
+
+/*const dogName = "Rikis";
+const repeat = 5;
+let result = "";
+
+for (let i = 0; i < repeat; i++) {
+  result += `${dogName},`;
+}
+console.log(result); */
+
+
+/*const dogName = "Rikis";
+const repeat = 5;
+let result = "";
+
+for (let i = 0; i < repeat; i++) {
+  if (i === repeat - 1){
+    // paskutinis ciklas ir pades taska
+  result += `${dogName}.`;
+} else {
+  result += `${dogName},`;
+}
+}
+console.log(result); */
+
+/*const start = 1;
+const count = 9;
+let result = 0;
+
+for (let i = start; i < count + 1; i++) {
+  console.log (i); 
+  result  += i; 
+}
+console.log (result); */
+
+/*let i = ;
+
+while ( i < 3) {
+  // shows 0, then 1, then 2
+  console.log(i);
+  i ++;
+}*/
+
+/*//inicializavimas
+let i = ;
+//sąlyga
+while ( i < 3) {
+  // shows 0, then 2, then 4,  6, 8
+  console.log(i);
+  //išraiška
+  i += 2;
+}*/
+
+//do ..while ciklas pirmiausia įvykdys kuna, tada patikrins israiska i rkol, tai tiesa, vel ir vel ja vykdys
+
+/*let i = 0;
+do {
+  console.log( i);
+  i++;
+} while (i < 3);*/
+
+
+const number = 2;
+
+if (number % 2 == 0) {
+// even - lyginis
+console.log(number + " skaicius yra lyginis");
+} else {
+// odd - nelyginis
+console.log(number + " skaicius yra nelyginis");
