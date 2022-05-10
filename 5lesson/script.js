@@ -18,9 +18,9 @@ descriptioNode.textContent = "Man patinka programuoti";
 document.body.style.margin = "0";
 document.body.style.backgroundColor = "red";
 nameNode.style.color = "blue";
-nameNode.style. paddingLeft = "left";
+nameNode.style.paddingLeft = "10px";
 descriptioNode.style.padding = "10px";
-descriptioNode.style.backgroundColor = "cyane";
+descriptioNode.style.backgroundColor = "cyan";
 
 
 // const liByTag = document.querySelector("li");
@@ -43,7 +43,9 @@ nameNode.style.paddingLeft = "10px";
 descriptionNode.style.padding = "10px";
 descriptionNode.style.backgroundColor = "cyan";
 
-// const liByTag = document.querySelector("li");
+
+// gali buti taip// const discountNode = document.querySelector("li");
+// gali buti ir taip// const liByTag = document.querySelector("li");
 // const liById = document.querySelector("#discount");
 // const liByClass = document.querySelector(".yellow");
 
