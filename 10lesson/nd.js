@@ -56,3 +56,25 @@ function changePosition() {
 button.addEventListener('click', changePosition); */
 
 //3.1 
+
+//4.1. 
+
+//<button id="name">Jump</button>
+document.getElementById('jump').addEventListener('input', event => {
+  const name = event.target.value;
+  document.body.style.backgroundColor = name.length < 3 ? 'red' : 'green';
+});
+
+
+//<input type="text" id="name">
+document.getElementById('name').addEventListener('input', event => {
+  const name = event.target.value;
+  document.body.style.backgroundColor = name.length < 3 ? 'red' : 'green';
+});
+
+//<button>Push!</button>
+const buttonColors = ["red", "green", "blue", "yellow"]
+document.querySelector('button').addEventListener('click', event => {
+  const randomIndex = Math.round(Math.random() * 4);
+  event.target.style.backgroundColor = buttonColors[randomIndex];
+});
