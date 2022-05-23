@@ -103,3 +103,5 @@ benefits.append(firstBenefit, secondBenefit, thirdBenefit);
 info.append(title, description, benefits);
 card.append(image, info);
 document.body.append(card);
+
+;
