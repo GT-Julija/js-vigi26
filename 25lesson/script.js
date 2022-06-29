@@ -1,24 +1,47 @@
 const renderTodo = (todo) => {
-    const { completed, title } = todo;
+    const { id, completed, title } = todo;
   
     const todoEl = document.createElement("div");
     const todoTitle = document.createElement("p");
+    const todoActions = document.createElement("div");
     const todoStatus = document.createElement("span");
+    const deleteButton = document.createElement("button");
   
     todoEl.className = "todo";
     todoTitle.className = completed ? "todo-title done": "todo-title";
     todoStatus.className = completed ? "todo-status done" : "todo-status";
-  
+    todoActions.className = "todo-action";
+    deleteButton.className= "todo-delete";
+
     todoTitle.textContent = title;
+    deleteButton.textContent = "Delete";
 
     todoStatus.addEventListener('click', () => {
         todoStatus.classList.toggle('done');
         todoTitle.classList.toggle('done');
         todoStatus.completed = !todoStatus.completed;
         console.log(completed);
-        })
+        });
+
+deleteButton.addEventListener("click", () => {
+  const params = {
+    method: "DELETE",
+  };
+
+  fetch(`https://jsonplaceholder.typicode.com/todos/${id}`, params)
+  .then((resp) => resp.json())
+  .then((response) => {
+    console.log("successufully deleted", todo);
+  })
+  .catch((error) => {
+    console.error(error);
+  });
+});
+
+        todoActions.append(todoStatus, deleteButton);
+        todoEl.append(todoTitle, todoActions);
   
-    todoEl.append(todoTitle, todoStatus);
+    //todoEl.append(todoTitle, todoStatus);
     document.querySelector(".todo-container").prepend(todoEl);
   };
   

@@ -35,6 +35,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 16px;
+
 }
 
 .todo-title {
@@ -44,6 +45,19 @@ body {
 
 .todo-title.done {
   color: lightgray;
+}
+
+.todo-actions {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.todo-delete {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  cursor: pointer;
 }
 
 .todo-status {

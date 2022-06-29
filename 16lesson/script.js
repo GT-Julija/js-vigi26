@@ -67,3 +67,8 @@ function prices(array){
 const veggiesPrice = prices(veggies);
 console.log(veggiesPrice.cheapest);
 console.log(veggiesPrice.expensive);
+
+
+
+
+

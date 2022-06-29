@@ -1,7 +1,7 @@
 // .splice padeda istrinti aba itepti masyvo elementa i pasirinkta vieta
 
 /*const sentence =["I", "study", "JavaScript", "right", "now"];
-const firstTwoElemnts = sentence.slicie(0, 2) ; //istrina pirmus du ir grazina
+const firstTwoElements = sentence.slicie(0, 2) ; //istrina pirmus du ir grazina
 console.log(sentence);
 
 
