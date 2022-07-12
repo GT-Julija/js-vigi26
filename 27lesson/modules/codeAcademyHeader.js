@@ -7,3 +7,4 @@ function codeAcademyHeader(element) {
   }
   
   export default codeAcademyHeader;
+
